@@ -15,7 +15,7 @@ describe("Get route", () => {
   it("page should return hello world", async () => {
     const res = await request(server).get("/");
     expect(res.statusCode).toEqual(200);
-    expect(res.body).toEqual("Hello world");
+    expect(res.body).toEqual("Hello world again");
   });
 });
 
