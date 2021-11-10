@@ -1,10 +1,17 @@
 language: node_js
 node_js:
-  - 10.13.0
+- 10.13.0
 install:
-  - npm install
+- npm install
 script:
-  - npm run test
+- npm run test
 branches:
   only:
-    - main
+  - main
+  - dev
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app:
+    main: travis-demo-2-prod
+    dev: travis-demo-2-staging

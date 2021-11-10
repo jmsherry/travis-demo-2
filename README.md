@@ -69,8 +69,8 @@ deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app:
-    main: travis-demo-prod
-    dev: travis-demo-staging
+    main: travis-demo-2-prod
+    dev: travis-demo-2-staging
 
 ```
 
